@@ -4,10 +4,10 @@ function setDate(){
     const now = new Date();
     const seconds = now.getSeconds();
     const secondsDegress = ((seconds/ 60) * 360) + 90;
-    secondHand.style.transform = `rotate(${secondsDegress}deg)`
+    secondHand.style.transform = `rotate(${secondsDegress}deg)`;
     
     const mins  = now.getMinutes();
     const minsDegress = ((mins/ 60) * 360) + 90;
-    min
+    minsHand.style.transform = `rotate(${minsDegress}deg)`;
 }
 setInterval(setDate,1000);
