@@ -1,5 +1,4 @@
-const { timeout } = require("nodemon/lib/config");
-
+const secondHand = document.querySelector('.second-hand');
 function setDate(){
     const date = new Date();
     const secondsDegress = (seconds/ 60) * 360;
